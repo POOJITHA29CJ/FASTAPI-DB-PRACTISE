@@ -1,0 +1,67 @@
+2025-07-28 16:50:34,414 - WARNING - Fetched all records
+2025-07-28 16:51:02,365 - WARNING - Department 101 not found
+2025-07-28 16:55:35,995 - INFO - Fetched all department records.
+2025-07-28 17:02:39,634 - WARNING - Department with ID 110 not found.
+2025-07-28 17:05:34,132 - WARNING - Department with ID 110 not found.
+2025-07-28 17:10:21,171 - INFO - Fetched all department records.
+2025-07-28 17:11:09,845 - INFO - Created new department with ID: 7
+2025-07-28 17:25:51,064 - INFO - Fetched all department records.
+2025-07-28 17:26:15,428 - WARNING - Department with ID 101 not found.
+2025-07-28 17:26:56,270 - INFO - Fetched department with ID: 1
+2025-07-28 17:27:57,118 - INFO - Updated department with ID: 1
+2025-07-29 09:50:18,025 - INFO - Fetched all employee records.
+2025-07-29 09:51:10,266 - INFO - Created employee with ID: 111
+2025-07-29 09:51:27,519 - INFO - Fetched employee with ID: 103
+2025-07-29 09:52:07,804 - ERROR - Error updating employee 108: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 09:54:22,419 - INFO - Updated employee with ID: 108
+2025-07-29 09:54:53,783 - INFO - Updated department with ID: 1
+2025-07-29 09:55:27,824 - INFO - Updated department with ID: 1
+2025-07-29 09:56:10,614 - ERROR - Error updating employee 108: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 10:01:06,786 - ERROR - Error updating employee 108: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 10:08:31,566 - INFO - Deleted employee with ID: 108
+2025-07-29 10:10:08,198 - INFO - Fetched 4 project(s)
+2025-07-29 10:10:55,911 - INFO - Created new project with ID: 205
+2025-07-29 10:11:19,338 - INFO - Fetched project with ID: 205
+2025-07-29 10:11:42,633 - INFO - Updated project with ID: 205
+2025-07-29 10:12:04,057 - INFO - Deleted project with ID: 205
+2025-07-29 10:15:36,621 - INFO - Fetched 4 assignments.
+2025-07-29 10:16:05,210 - ERROR - Assignment failed: (1062, "Duplicate entry '101-201' for key 'employee_project.PRIMARY'")
+2025-07-29 10:16:46,299 - INFO - Assigned employee 103 to project 201
+2025-07-29 10:17:08,122 - INFO - Assigned employee 102 to project 201
+2025-07-29 10:17:16,997 - INFO - Assigned employee 102 to project 204
+2025-07-29 10:17:35,278 - INFO - Assigned employee 101 to project 204
+2025-07-29 10:20:24,344 - ERROR - Assignment failed: (1062, "Duplicate entry '111-204' for key 'employee_project.PRIMARY'")
+2025-07-29 10:20:27,295 - ERROR - Assignment failed: (1062, "Duplicate entry '111-204' for key 'employee_project.PRIMARY'")
+2025-07-29 10:20:56,956 - INFO - Assigned employee 111 to project 201
+2025-07-29 10:21:16,593 - INFO - Fetched assignments for project ID: 201
+2025-07-29 10:21:38,846 - INFO - Fetched assignments for project ID: 201
+2025-07-29 10:22:56,862 - INFO - Fetched assignments for project ID: 201
+2025-07-29 10:23:14,299 - INFO - Fetched assignments for employee ID: 101
+2025-07-29 10:23:27,047 - INFO - Fetched employees for project ID: 201
+2025-07-29 10:23:47,266 - INFO - Fetched projects for employee ID: 103
+2025-07-29 10:29:55,385 - ERROR - Error patching employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 10:30:10,882 - INFO - Patched employee with ID: 111
+2025-07-29 10:33:10,583 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 10:51:15,056 - INFO - Updated project with ID: 204
+2025-07-29 10:52:17,617 - INFO - Created new department with ID: 8
+2025-07-29 10:52:37,363 - INFO - Updated department with ID: 8
+2025-07-29 11:23:07,149 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 11:25:51,156 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 11:27:10,966 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 11:29:03,309 - ERROR - Error updating employee 111: 1 validation error for EmployeeOut
+department_id
+  Input should be a valid integer [type=int_type, input_value=<Department: 1>, input_type=Department]
+    For further information visit https://errors.pydantic.dev/2.11/v/int_type
+2025-07-29 11:29:30,326 - ERROR - Error updating employee 111: 1 validation error for EmployeeOut
+department_id
+  Input should be a valid integer [type=int_type, input_value=<Department: 1>, input_type=Department]
+    For further information visit https://errors.pydantic.dev/2.11/v/int_type
+2025-07-29 11:31:37,642 - ERROR - Error updating employee 111: 1 validation error for EmployeeOut
+department_id
+  Input should be a valid integer [type=int_type, input_value=<Department: 1>, input_type=Department]
+    For further information visit https://errors.pydantic.dev/2.11/v/int_type
+2025-07-29 11:38:02,606 - INFO - Created new department with ID: 9
+2025-07-29 11:38:47,231 - INFO - Created employee with ID: 112
+2025-07-29 11:44:04,913 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 11:45:59,706 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
+2025-07-29 11:50:21,311 - ERROR - Error updating employee 111: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`emps`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`))')
